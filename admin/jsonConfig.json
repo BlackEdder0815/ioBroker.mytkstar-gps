@@ -1,0 +1,16 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"trackerID": {
+			"type": "text",
+			"label": "ID of your GPS tracker",
+			"newLine": true
+		},
+		"Password": {
+			"type": "text",
+			"label": "password of your GPS tracker",
+			"newLine": true
+		}
+	}
+}

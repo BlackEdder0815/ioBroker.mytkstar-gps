@@ -1,0 +1,86 @@
+{
+	"common": {
+		"name": "mytkstar-gps",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "MyTKStar GPS",
+		"titleLang": {
+			"en": "MyTKStar GPS",
+			"de": "MyTKStar GPS",
+			"ru": "MyTKStar GPS",
+			"pt": "MyTKStar GPS",
+			"nl": "MyTKStar GPS",
+			"fr": "MyTKStar GPS",
+			"it": "MyTKStar GPS",
+			"es": "MyTKStar GPS",
+			"pl": "MyTKStar GPS",
+			"zh-cn": "MyTKStar GPS"
+		},
+		"desc": {
+			"en": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"de": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"ru": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"pt": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"nl": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"fr": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"it": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"es": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"pl": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+			"zh-cn": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password."
+		},
+		"authors": [
+			"BlackEdder0815 <github@famsona.de>"
+		],
+		"keywords": [
+			"MyTKStar",
+			"gps",
+			"TK911pro",
+			"winnes"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "mytkstar-gps.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/BlackEdder0815/ioBroker.mytkstar-gps/main/admin/mytkstar-gps.png",
+		"readme": "https://github.com/BlackEdder0815/ioBroker.mytkstar-gps/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "geoposition",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"trackerID": "",
+		"Password": "123456"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
