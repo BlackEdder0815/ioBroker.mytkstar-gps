@@ -5,12 +5,14 @@
 		"trackerID": {
 			"type": "text",
 			"label": "ID of your GPS tracker",
-			"newLine": true
+			"newLine": true,
+			"help": "ID of the tracker. Typically found directly on the tracker. Same ID for logging into mytkstar.com."
 		},
 		"Password": {
 			"type": "text",
 			"label": "password of your GPS tracker",
-			"newLine": true
+			"newLine": true,
+			"help": "Password for Tracker. Default is set to 123456. If you changed the password already, please enter here accordingly."
 		}
 	}
 }
