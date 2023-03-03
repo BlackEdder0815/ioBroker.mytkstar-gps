@@ -82,5 +82,242 @@
 		"Password": "123456"
 	},
 	"objects": [],
-	"instanceObjects": []
+	"instanceObjects": [
+		{
+			"_id": "token",
+			"type": "channel",
+			"common": {
+				"name": "Token"
+			}
+		},
+		{
+			"_id": "token.id",
+			"type": "state",
+			"common": {
+				"name": "Token ID",
+				"type": "string",
+				"role": "text",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.locationID",
+			"type": "state",
+			"common": {
+				"name": "Token LocationID",
+				"type": "number",
+				"role": "value",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.groupID",
+			"type": "state",
+			"common": {
+				"name": "Token GroupID",
+				"type": "number",
+				"role": "value",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.serverUtcDate",
+			"type": "state",
+			"common": {
+				"name": "serverUtcDate",
+				"type": "string",
+				"role": "date",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.deviceUtcDate",
+			"type": "state",
+			"common": {
+				"name": "deviceUtcDate",
+				"type": "string",
+				"role": "date",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.baiduLat",
+			"type": "state",
+			"common": {
+				"name": "baiduLat",
+				"type": "number",
+				"role": "value.gps.latitude",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.baiduLng",
+			"type": "state",
+			"common": {
+				"name": "baiduLng",
+				"type": "number",
+				"role": "value.gps.longitude",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.latitude",
+			"type": "state",
+			"common": {
+				"name": "latitude",
+				"type": "number",
+				"role": "value.gps.latitude",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.longitude",
+			"type": "state",
+			"common": {
+				"name": "longitude",
+				"type": "number",
+				"role": "value.gps.longitude",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.ofl",
+			"type": "state",
+			"common": {
+				"name": "ofl",
+				"type": "number",
+				"role": "value",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.speed",
+			"type": "state",
+			"common": {
+				"name": "speed",
+				"type": "number",
+				"role": "value.speed",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.course",
+			"type": "state",
+			"common": {
+				"name": "course",
+				"type": "number",
+				"role": "value.sun.azimuth",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.dataType",
+			"type": "state",
+			"common": {
+				"name": "dataType",
+				"type": "number",
+				"role": "value",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.battery",
+			"type": "state",
+			"common": {
+				"name": "Battery",
+				"type": "number",
+				"role": "value.battery",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.distance",
+			"type": "state",
+			"common": {
+				"name": "distance",
+				"type": "number",
+				"role": "value.distance",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.isStop",
+			"type": "state",
+			"common": {
+				"name": "isStop",
+				"type": "number",
+				"role": "value",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.stopTimeMinute",
+			"type": "state",
+			"common": {
+				"name": "stopTimeMinute",
+				"type": "number",
+				"role": "value.interval",
+				"unit": "min",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.carStatus",
+			"type": "state",
+			"common": {
+				"name": "carStatus",
+				"type": "string",
+				"role": "text",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		},
+		{
+			"_id": "token.status",
+			"type": "state",
+			"common": {
+				"name": "status",
+				"type": "string",
+				"role": "text",
+				"read": "true",
+				"write": "false"
+			},
+			"native": {}
+		}
+	]
 }
