@@ -7,6 +7,7 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
+const axios = require('axios').default;
 
 // Load your modules here, e.g.:
 // const fs = require("fs");
@@ -36,8 +37,8 @@ class MytkstarGps extends utils.Adapter {
 
 		// The adapters config (in the instance object everything under the attribute "native") is accessible via
 		// this.config:
-		this.log.info("config trackerID: " + this.config.trackerID);
-		this.log.info("config Password: " + this.config.Password);
+		this.log.info("config trackerID: " + this.config.trackerID); 
+		this.log.info("config Password: " + this.config.Password); //TODO remove
 
 		/*
 		For every state in the system there has to be also an object of type state
