@@ -19,7 +19,7 @@
     "url": "git@github.com:BlackEdder0815/ioBroker.mytkstar-gps.git"
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 18"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.6.7",
