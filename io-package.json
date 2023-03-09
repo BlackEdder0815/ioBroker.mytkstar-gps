@@ -79,7 +79,8 @@
 	},
 	"native": {
 		"trackerID": "",
-		"Password": "123456"
+		"Password": "123456",
+		"requestFrequency": 60
 	},
 	"objects": [],
 	"instanceObjects": [
