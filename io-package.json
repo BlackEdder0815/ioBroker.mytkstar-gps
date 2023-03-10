@@ -1,327 +1,340 @@
 {
-    "common": {
-        "name": "mytkstar-gps",
-        "version": "0.0.1",
-        "news": {
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "zh-cn": "首次出版",
-                "uk": "початковий випуск"
-            }
-        },
-        "title": "MyTKStar GPS",
-        "titleLang": {
-            "en": "MyTKStar GPS",
-            "de": "MyTKStar GPS",
-            "ru": "MyTKStar GPS",
-            "pt": "MyTKStar GPS",
-            "nl": "MyTKStar GPS",
-            "fr": "MyTKStar GPS",
-            "it": "MyTKStar GPS",
-            "es": "MyTKStar GPS",
-            "pl": "MyTKStar GPS",
-            "zh-cn": "MyTKStar GPS",
-            "uk": "MyTKStar GPS"
-        },
-        "desc": {
-            "en": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "de": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "ru": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "pt": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "nl": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "fr": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "it": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "es": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "pl": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "zh-cn": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
-            "uk": "Отримання останнього статусу GPS-трекера, наприклад TK911pro (для домашніх тварин) або кількох інших трекерів, які підтримуються цим постачальником. Усе, що вам потрібно, це ідентифікатор трекера та пароль трекера."
-        },
-        "authors": [
-            "BlackEdder0815 <github@famsona.de>"
-        ],
-        "keywords": [
-            "MyTKStar",
-            "gps",
-            "TK911pro",
-            "winnes"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "main": "main.js",
-        "icon": "mytkstar-gps.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/BlackEdder0815/ioBroker.mytkstar-gps/main/admin/mytkstar-gps.png",
-        "readme": "https://github.com/BlackEdder0815/ioBroker.mytkstar-gps/blob/main/README.md",
-        "loglevel": "info",
-        "mode": "daemon",
-        "type": "geoposition",
-        "compact": true,
-        "connectionType": "cloud",
-        "dataSource": "poll",
-        "adminUI": {
-            "config": "json"
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=3.3.22"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=5.1.13"
-            }
-        ]
+  "common": {
+    "name": "mytkstar-gps",
+    "version": "1.0.0",
+    "news": {
+      "1.0.0": {
+        "en": "Stabelized first version. Basic fetching of data is working.",
+        "de": "Stabelisierte erste Version. Das grundlegende Abrufen von Daten funktioniert.",
+        "ru": "Стабелизированная первая версия. Работает основной поиск данных.",
+        "pt": "Estabelizada primeira versão. A busca básica de dados está funcionando.",
+        "nl": "Verduisterde eerste versie. Basis halen van gegevens werkt.",
+        "fr": "Stabelized first version. La collecte de données de base fonctionne.",
+        "it": "Stabelized prima versione. La raccolta di dati di base sta funzionando.",
+        "es": "Primera versión estandarizada. La búsqueda básica de datos está funcionando.",
+        "pl": "Pierwsza wersja. Podstawowe zastosowanie danych.",
+        "uk": "Стабельізована перша версія. Базовий фетшинг даних працює.",
+        "zh-cn": "第一类。 基本的数据正在工作。."
+      },
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "zh-cn": "首次出版",
+        "uk": "початковий випуск"
+      }
     },
-    "native": {
-        "trackerID": "",
-        "Password": "123456",
-        "requestFrequency": 60
+    "title": "MyTKStar GPS",
+    "titleLang": {
+      "en": "MyTKStar GPS",
+      "de": "MyTKStar GPS",
+      "ru": "MyTKStar GPS",
+      "pt": "MyTKStar GPS",
+      "nl": "MyTKStar GPS",
+      "fr": "MyTKStar GPS",
+      "it": "MyTKStar GPS",
+      "es": "MyTKStar GPS",
+      "pl": "MyTKStar GPS",
+      "zh-cn": "MyTKStar GPS",
+      "uk": "MyTKStar GPS"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "token",
-            "type": "channel",
-            "common": {
-                "name": "Token"
-            }
-        },
-        {
-            "_id": "token.id",
-            "type": "state",
-            "common": {
-                "name": "Token ID",
-                "type": "string",
-                "role": "text",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.locationID",
-            "type": "state",
-            "common": {
-                "name": "Token LocationID",
-                "type": "number",
-                "role": "value",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.groupID",
-            "type": "state",
-            "common": {
-                "name": "Token GroupID",
-                "type": "number",
-                "role": "value",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.serverUtcDate",
-            "type": "state",
-            "common": {
-                "name": "serverUtcDate",
-                "type": "string",
-                "role": "date",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.deviceUtcDate",
-            "type": "state",
-            "common": {
-                "name": "deviceUtcDate",
-                "type": "string",
-                "role": "date",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.baiduLat",
-            "type": "state",
-            "common": {
-                "name": "baiduLat",
-                "type": "number",
-                "role": "value.gps.latitude",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.baiduLng",
-            "type": "state",
-            "common": {
-                "name": "baiduLng",
-                "type": "number",
-                "role": "value.gps.longitude",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.latitude",
-            "type": "state",
-            "common": {
-                "name": "latitude",
-                "type": "number",
-                "role": "value.gps.latitude",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.longitude",
-            "type": "state",
-            "common": {
-                "name": "longitude",
-                "type": "number",
-                "role": "value.gps.longitude",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.ofl",
-            "type": "state",
-            "common": {
-                "name": "ofl",
-                "type": "number",
-                "role": "value",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.speed",
-            "type": "state",
-            "common": {
-                "name": "speed",
-                "type": "number",
-                "role": "value.speed",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.course",
-            "type": "state",
-            "common": {
-                "name": "course",
-                "type": "number",
-                "role": "value.sun.azimuth",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.dataType",
-            "type": "state",
-            "common": {
-                "name": "dataType",
-                "type": "number",
-                "role": "value",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.battery",
-            "type": "state",
-            "common": {
-                "name": "Battery",
-                "type": "number",
-                "role": "value.battery",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.distance",
-            "type": "state",
-            "common": {
-                "name": "distance",
-                "type": "number",
-                "role": "value.distance",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.isStop",
-            "type": "state",
-            "common": {
-                "name": "isStop",
-                "type": "number",
-                "role": "value",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.stopTimeMinute",
-            "type": "state",
-            "common": {
-                "name": "stopTimeMinute",
-                "type": "number",
-                "role": "value.interval",
-                "unit": "min",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.carStatus",
-            "type": "state",
-            "common": {
-                "name": "carStatus",
-                "type": "string",
-                "role": "text",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        },
-        {
-            "_id": "token.status",
-            "type": "state",
-            "common": {
-                "name": "status",
-                "type": "string",
-                "role": "text",
-                "read": "true",
-                "write": "false"
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "de": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "ru": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "pt": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "nl": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "fr": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "it": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "es": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "pl": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "zh-cn": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
+      "uk": "Отримання останнього статусу GPS-трекера, наприклад TK911pro (для домашніх тварин) або кількох інших трекерів, які підтримуються цим постачальником. Усе, що вам потрібно, це ідентифікатор трекера та пароль трекера."
+    },
+    "authors": [
+      "BlackEdder0815 <github@famsona.de>"
+    ],
+    "keywords": [
+      "MyTKStar",
+      "gps",
+      "TK911pro",
+      "winnes"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
+    "icon": "mytkstar-gps.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/BlackEdder0815/ioBroker.mytkstar-gps/main/admin/mytkstar-gps.png",
+    "readme": "https://github.com/BlackEdder0815/ioBroker.mytkstar-gps/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "geoposition",
+    "compact": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.13"
+      }
     ]
+  },
+  "native": {
+    "trackerID": "",
+    "Password": "123456",
+    "requestFrequency": 60
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "token",
+      "type": "channel",
+      "common": {
+        "name": "Token"
+      }
+    },
+    {
+      "_id": "token.id",
+      "type": "state",
+      "common": {
+        "name": "Token ID",
+        "type": "string",
+        "role": "text",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.locationID",
+      "type": "state",
+      "common": {
+        "name": "Token LocationID",
+        "type": "number",
+        "role": "value",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.groupID",
+      "type": "state",
+      "common": {
+        "name": "Token GroupID",
+        "type": "number",
+        "role": "value",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.serverUtcDate",
+      "type": "state",
+      "common": {
+        "name": "serverUtcDate",
+        "type": "string",
+        "role": "date",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.deviceUtcDate",
+      "type": "state",
+      "common": {
+        "name": "deviceUtcDate",
+        "type": "string",
+        "role": "date",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.baiduLat",
+      "type": "state",
+      "common": {
+        "name": "baiduLat",
+        "type": "number",
+        "role": "value.gps.latitude",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.baiduLng",
+      "type": "state",
+      "common": {
+        "name": "baiduLng",
+        "type": "number",
+        "role": "value.gps.longitude",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.latitude",
+      "type": "state",
+      "common": {
+        "name": "latitude",
+        "type": "number",
+        "role": "value.gps.latitude",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.longitude",
+      "type": "state",
+      "common": {
+        "name": "longitude",
+        "type": "number",
+        "role": "value.gps.longitude",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.ofl",
+      "type": "state",
+      "common": {
+        "name": "ofl",
+        "type": "number",
+        "role": "value",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.speed",
+      "type": "state",
+      "common": {
+        "name": "speed",
+        "type": "number",
+        "role": "value.speed",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.course",
+      "type": "state",
+      "common": {
+        "name": "course",
+        "type": "number",
+        "role": "value.sun.azimuth",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.dataType",
+      "type": "state",
+      "common": {
+        "name": "dataType",
+        "type": "number",
+        "role": "value",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.battery",
+      "type": "state",
+      "common": {
+        "name": "Battery",
+        "type": "number",
+        "role": "value.battery",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.distance",
+      "type": "state",
+      "common": {
+        "name": "distance",
+        "type": "number",
+        "role": "value.distance",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.isStop",
+      "type": "state",
+      "common": {
+        "name": "isStop",
+        "type": "number",
+        "role": "value",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.stopTimeMinute",
+      "type": "state",
+      "common": {
+        "name": "stopTimeMinute",
+        "type": "number",
+        "role": "value.interval",
+        "unit": "min",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.carStatus",
+      "type": "state",
+      "common": {
+        "name": "carStatus",
+        "type": "string",
+        "role": "text",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    },
+    {
+      "_id": "token.status",
+      "type": "state",
+      "common": {
+        "name": "status",
+        "type": "string",
+        "role": "text",
+        "read": "true",
+        "write": "false"
+      },
+      "native": {}
+    }
+  ]
 }

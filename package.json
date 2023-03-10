@@ -1,6 +1,6 @@
 {
   "name": "iobroker.mytkstar-gps",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Getting latest status of GPS-Tracker like TK911pro (for pets) or several other trackers supported by this vendor. All what you need is your tracker ID and the tracker password.",
   "author": {
     "name": "BlackEdder0815",
