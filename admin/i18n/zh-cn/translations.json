@@ -1,5 +1,5 @@
 {
-	"mytkstar-gps adapter settings": "mytkstar-gps的适配器设置",
-	"trackerID": "ID of your GPS tracker",
-	"Password": "password of your GPS tracker"
+    "mytkstar-gps adapter settings": "mytkstar-gps 的适配器设置",
+    "trackerID": "您的 GPS 追踪器的 ID",
+    "Password": "您的 GPS 追踪器的密码"
 }

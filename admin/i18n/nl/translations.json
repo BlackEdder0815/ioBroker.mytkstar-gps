@@ -1,5 +1,5 @@
 {
-	"mytkstar-gps adapter settings": "Adapterinstellingen voor mytkstar-gps",
-	"trackerID": "ID of your GPS tracker",
-	"Password": "password of your GPS tracker"
+    "mytkstar-gps adapter settings": "Adapterinstellingen voor mytkstar-gps",
+    "trackerID": "ID van uw GPS-tracker",
+    "Password": "wachtwoord van uw GPS-tracker"
 }

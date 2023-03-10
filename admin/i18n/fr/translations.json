@@ -1,5 +1,5 @@
 {
-	"mytkstar-gps adapter settings": "Paramètres d'adaptateur pour mytkstar-gps",
-	"trackerID": "ID of your GPS tracker",
-	"Password": "password of your GPS tracker"
+    "mytkstar-gps adapter settings": "Paramètres de l'adaptateur pour mytkstar-gps",
+    "trackerID": "ID de votre traceur GPS",
+    "Password": "mot de passe de votre traceur GPS"
 }
