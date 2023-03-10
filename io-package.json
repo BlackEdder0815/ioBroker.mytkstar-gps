@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "mytkstar-gps",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "news": {
+      "1.0.1": {
+        "en": "minor bugfix",
+        "de": "kleiner bugfix",
+        "ru": "мелкий багфикс",
+        "pt": "pequeno bugfix",
+        "nl": "minor bugfix",
+        "fr": "bugfix mineur",
+        "it": "bugfix minore",
+        "es": "bugfix menor",
+        "pl": "trąbka",
+        "uk": "неповний багфікс",
+        "zh-cn": "b 微软性"
+      },
       "1.0.0": {
         "en": "Stabelized first version. Basic fetching of data is working.",
         "de": "Stabelisierte erste Version. Das grundlegende Abrufen von Daten funktioniert.",
