@@ -28,8 +28,9 @@ Login with username is currently not supported.
 	### **WORK IN PROGRESS**
 -->
 
-### **WORK IN PROGRESS**
-* (BlackEdder0815) initial release
+## **WORK IN PROGRESS**
+
+-   Stabelized first version. Basic fetching of data is working.
 
 ## License
 MIT License
