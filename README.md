@@ -28,7 +28,7 @@ Login with username is currently not supported.
 	### **WORK IN PROGRESS**
 -->
 
-## **WORK IN PROGRESS**
+### **WORK IN PROGRESS**
 
 -   Stabelized first version. Basic fetching of data is working.
 
