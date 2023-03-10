@@ -34,6 +34,7 @@ class MytkstarGps extends utils.Adapter {
 	/**
 	 * Worker function. This function is called regulary to fetch
 	 * the latest state of the gps-token from the vendor page.
+	 * @param {MytkstarGps} context
 	 */
 	async updateStates(context) {
 		try{
